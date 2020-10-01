@@ -40,13 +40,14 @@ const App = () => {
   };
 
   return (
-    <Container fluid>
+    <Container fluid className="text-center">
       <ToastContainer />
       <Row>
         <Col md="8">
           <BuyPage addInCart={addInCart} />
         </Col>
         <Col className="mt-2 mb-2" md="4">
+          <h1 className="text-success">Your Basket</h1>
           <Cart cartItem={cartItem} removeItem={removeItem} buyNow={buyNow} />
         </Col>
       </Row>
